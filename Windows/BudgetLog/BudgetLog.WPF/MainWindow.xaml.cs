@@ -24,5 +24,10 @@ namespace BudgetLog.WPF
 		{
 			InitializeComponent();
 		}
+
+		private void ExitButton_Click(object sender, RoutedEventArgs e)
+		{
+			
+		}
 	}
 }

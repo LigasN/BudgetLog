@@ -4,6 +4,10 @@
              xmlns:local="clr-namespace:BudgetLog.WPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <Color x:Key="MainTextColorBlack">#FF4BC2FF</Color>
+        <Color x:Key="ActiveTextColorBlackMode">#FF9DDEFF</Color>
+        <Color x:Key="TextColorBlackMode">#FF4BC2FF</Color>
+
     </Application.Resources>
 </Application>
