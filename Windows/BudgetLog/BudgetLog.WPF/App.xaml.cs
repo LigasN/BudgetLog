@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace BudgetLog.WPF
@@ -13,5 +8,17 @@ namespace BudgetLog.WPF
 	/// </summary>
 	public partial class App : Application
 	{
+		private StateMachine stateMachine;
+		private App()
+		{
+			stateMachine = new StateMachine();
+		}
+
+		[STAThread]
+		static void Main()
+		{
+			App app = new App();
+			app.Run();
+		}
 	}
 }

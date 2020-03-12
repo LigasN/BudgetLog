@@ -45,11 +45,14 @@
 			<RowDefinition Height="*"/>
 			<RowDefinition Height="1.25*"/>
 		</Grid.RowDefinitions>
-		<Label x:Name="Logo" Grid.Row="0" Content="BudgetLog" Style="{DynamicResource LabelsStyle}"/>
-		<Button x:Name="NewRecordButton" Grid.Row="2"  Content="Add new record" Style="{StaticResource ButtonsStyle}"/>
-		<Button x:Name="CurrentStateButton" Grid.Row="3" Content="Current state" Style="{StaticResource ButtonsStyle}"/>
-		<Button x:Name="PlannerButton" Grid.Row="4" Content="Planner" Style="{StaticResource ButtonsStyle}"/>
-		<Button x:Name="SettingsButton" Grid.Row="5" Content="Settings" Style="{StaticResource ButtonsStyle}"/>
-		<Button x:Name="ExitButton" Grid.Row="6" Content="Exit" Style="{StaticResource ButtonsStyle}"/>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Label x:Name="Logo" Grid.Row="0" Grid.Column="0" Content="BudgetLog" Style="{DynamicResource LabelsStyle}"/>
+		<Button x:Name="NewRecordButton" Grid.Row="2" Grid.Column="0" Content="Add new record" Style="{StaticResource ButtonsStyle}" Click="NewRecordButton_Click"/>
+		<Button x:Name="CurrentStateButton" Grid.Row="3" Grid.Column="0" Content="Current state" Style="{StaticResource ButtonsStyle}" Click="CurrentStateButton_Click"/>
+		<Button x:Name="PlannerButton" Grid.Row="4" Grid.Column="0" Content="Planner" Style="{StaticResource ButtonsStyle}" Click="PlannerButton_Click"/>
+		<Button x:Name="SettingsButton" Grid.Row="5" Grid.Column="0" Content="Settings" Style="{StaticResource ButtonsStyle}" Click="SettingsButton_Click"/>
+		<Button x:Name="ExitButton" Grid.Row="6" Grid.Column="0" Content="Exit" Style="{StaticResource ButtonsStyle}"/>
 	</Grid>
 </Window>
