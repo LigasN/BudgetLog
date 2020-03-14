@@ -15,7 +15,7 @@ namespace BudgetLog.WPF
 		}
 
 		[STAThread]
-		static void Main()
+		private static void Main()
 		{
 			App app = new App();
 			app.Run();
